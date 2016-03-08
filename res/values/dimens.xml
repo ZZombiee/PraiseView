@@ -1,0 +1,251 @@
+<resources>
+    
+	<!-- 截取图片 -->
+	<dimen name="clip_pic_controll_height">48dp</dimen>
+<!-- @Deprecated    <dimen name="clip_pic_controll_btn_margin_left">100dp</dimen> -->
+    <dimen name="clip_pic_controll_btn_margin_bottom">40dp</dimen>
+<!-- @Deprecated    <dimen name="clip_pic_seekbar_margin_top">20dp</dimen> -->
+<!-- @Deprecated    <dimen name="clip_pic_seekbar_margin_left">75dp</dimen> -->
+<!-- @Deprecated    <dimen name="clip_pic_seekbar_radius">2dp</dimen> -->
+<!-- @Deprecated    <dimen name="clip_pic_seekbar_height">6dp</dimen> -->
+    <dimen name="clip_pic_btn_width">72dp</dimen>
+    <dimen name="clip_pic_btn_height">42dp</dimen>
+    <dimen name="clip_pic_font">17sp</dimen>
+	
+	<!-- 收藏页面 -->
+<!-- @Deprecated	<dimen name="favicon_photo_size">70dp</dimen> -->
+<!-- @Deprecated	<dimen name="favicon_photo_margin">3dp</dimen> -->
+<!-- @Deprecated	<dimen name="favicon_gridview_padding_left">16dp</dimen> -->
+	
+    <!-- 发帖界面 -->
+    <dimen name="post_topic_progress_height">10dp</dimen>
+    
+    <!-- 发帖文字编辑框 -->
+<!-- @Deprecated    <dimen name="post_topic_edit_padding">15dp</dimen> -->
+<!-- @Deprecated    <dimen name="post_topic_edit_margin">64dp</dimen> -->
+<!-- @Deprecated    <dimen name="post_topic_padding_top">72dp</dimen> -->
+<!-- @Deprecated    <dimen name="post_topic_edit_height">400dp</dimen> -->
+    
+    <!-- 2.0发帖-拍照页 -->
+    <dimen name="post_topic_camera_album_btn_size">42dp</dimen>    
+     
+    <!-- 2.0发帖-编辑照片页 -->
+    <dimen name="post_topic_edit_image_stikcer_item_height">104dp</dimen>  
+    
+    <!-- 2.0发帖-编辑文字页 -->
+<!-- @Deprecated    <dimen name="post_topic_edit_text_paper_margin_horizontal">16dp</dimen> -->
+<!-- @Deprecated    <dimen name="post_topic_edit_text_paper_margin_top">24dp</dimen> -->
+<!-- @Deprecated    <dimen name="post_topic_edit_text_paper_margin_bottom">20dp</dimen> -->
+<!-- @Deprecated    <dimen name="post_topic_edit_text_photo_margin_horizontal">10dp</dimen> -->
+<!-- @Deprecated    <dimen name="post_topic_edit_text_photo_margin_top">16dp</dimen> -->
+    
+    
+    <!-- 引导页相关 -->
+    <dimen name="guide_message_bottom_margin">165dp</dimen>
+<!-- @Deprecated    <dimen name="guide_favicon_bottom_margin">100dp</dimen> -->
+<!-- @Deprecated    <dimen name="guide_favicon_margin_left">20dp</dimen> -->
+<!-- @Deprecated    <dimen name="guide_favicon_arrow_margin_left">15dp</dimen> -->
+    <dimen name="guide_camera_margin_left">30dp</dimen>
+    <dimen name="guide_camera_margin_bottom">100dp</dimen>    
+    <dimen name="guide_head_margin_top">80dp</dimen>    
+    <dimen name="guide_back_margin_top">70dp</dimen>
+    <dimen name="guide_back_margin_left">10dp</dimen>
+    <dimen name="guide_back_arrow_margin_left">15dp</dimen>
+    
+    <!-- 关注、陌生人 -->
+<!-- @Deprecated    <dimen name="favor_line_width">34dp</dimen> -->
+<!-- @Deprecated    <dimen name="favor_line_height">2dp</dimen>     -->
+<!-- @Deprecated    <dimen name="favor_tab_padding_left">10dp</dimen> -->
+    
+    <!-- 分享 -->
+<!-- @Deprecated    <dimen name="share_margin">10dp</dimen> -->
+    
+    <!-- tag选择页面 -->
+    <dimen name="tag_select_description_text_margin_top">30dp</dimen>
+    <dimen name="tag_select_description_text_margin_bottom">20dp</dimen>
+    <dimen name="tag_select_description_text_size">12sp</dimen>
+<!-- @Deprecated    <dimen name="tag_select_tag_text_size">14sp</dimen> -->
+    <dimen name="tag_select_tag_viewgroup_padding_left">15dp</dimen>
+    <dimen name="tag_select_tag_text_margin_left">3dp</dimen>
+    <dimen name="tag_select_tag_text_margin_top">5dp</dimen>
+    
+    <!-- 个人信息修改页 -->
+    <dimen name="profile_modify_pic_title_text_margin_top">20dp</dimen>
+    <dimen name="profile_modify_pic_title_text_margin_bottom">10dp</dimen>
+    <dimen name="profile_modify_com_margin">16dp</dimen>
+    <dimen name="profile_modify_part_divider">20dp</dimen>
+    <dimen name="profile_modify_gridview_divider">20dp</dimen>
+    <dimen name="profile_modify_com_margin_small">10dp</dimen>
+    <dimen name="profile_modify_head_line_height">64dp</dimen>
+    <dimen name="profile_modify_head_width">45dp</dimen>
+    <dimen name="profile_complete_head_rl_padding">45dp</dimen>
+<!-- @Deprecated    <dimen name="profile_complete_title_next_textsize">14dp</dimen> -->
+    <dimen name="profile_modify_favo_item_width">50dp</dimen>
+    <dimen name="profile_modify_favo_item_height">72dp</dimen>
+    <dimen name="profile_modify_favo_music_size">40dp</dimen>
+    <dimen name="profile_modify_common_content_size">14dp</dimen>
+    
+    <!-- 运营界面 -->
+    <dimen name="operation_image_margin">16dp</dimen>
+    <dimen name="operation_close_image_size">40dp</dimen>
+    <dimen name="operation_alarm_text_padding">20dp</dimen>
+<!-- @Deprecated    <dimen name="operation_join_text_height">50dp</dimen> -->
+    
+    <!-- 个人历史漂流瓶页面 -->
+<!-- @Deprecated    <dimen name="history_bottle_item_left_padding">10dp</dimen> -->
+<!-- @Deprecated    <dimen name="history_bottle_item_topic_image_height">140dp</dimen> -->
+<!-- @Deprecated    <dimen name="history_bottle_item_topic_text_margin">40dp</dimen> -->
+<!-- @Deprecated    <dimen name="history_bottle_item_user_rl_size">45dp</dimen> -->
+<!-- @Deprecated    <dimen name="history_bottle_item_user_icon_size">40dp</dimen> -->
+<!-- @Deprecated    <dimen name="history_bottle_item_common_margin">12dp</dimen> -->
+<!-- @Deprecated    <dimen name="history_bottle_item_common_margin_short">8dp</dimen> -->
+<!-- @Deprecated    <dimen name="history_bottle_item_margin_bottom">45dp</dimen> -->
+<!-- @Deprecated    <dimen name="history_bottle_item_time_margin_top">20dp</dimen> -->
+<!-- @Deprecated    <dimen name="history_bottle_item_time_margin_left">35dp</dimen> -->
+    
+    <!-- 贴纸活动对话框 -->
+    <dimen name="sticker_activity_dialog_corner_radius">2dp</dimen>
+    <dimen name="sticker_activity_dialog_width">272dp</dimen>
+    <dimen name="sticker_activity_dialog_poster_width">272dp</dimen>
+    <dimen name="sticker_activity_dialog_poster_height">200dp</dimen>     
+
+    <!-- 2.0首页菜单 -->
+<!-- @Deprecated    <dimen name="menu_head_portrait_item_height">244dp</dimen> -->
+<!-- @Deprecated    <dimen name="menu_head_portrait_size">80dp</dimen> -->
+<!-- @Deprecated    <dimen name="menu_head_portrait_margin">88dp</dimen> -->
+<!-- @Deprecated    <dimen name="menu_item_height">56dp</dimen> -->
+<!-- @Deprecated    <dimen name="menu_item_divider">1dp</dimen> -->
+<!-- @Deprecated    <dimen name="silde_content_margin_bottom">60dp</dimen> -->
+    <dimen name="nickname_max_length">120dp</dimen>
+    
+    <!-- 漂流瓶布局相关 -->
+<!-- @Deprecated    <dimen name="bottle_back_common_margin">4dp</dimen> -->
+    <dimen name="bottle_back_text_height">14dp</dimen>
+<!-- @Deprecated    <dimen name="bottle_media_view_margin_size">48dp</dimen> -->
+    <dimen name="tab_dot_margin">-2dp</dimen>
+<!-- @Deprecated    <dimen name="bottle_front_video_load_view_size">64dp</dimen> -->
+<!-- @Deprecated    <dimen name="bottle_line_view_height">24dp</dimen> -->
+    <dimen name="bottle_tip_height">40dp</dimen>
+    
+    <!-- titlebar的高度 -->
+    <dimen name="titlebar_height">44dp</dimen>
+    <dimen name="titlebar_ic_width">48dp</dimen>
+    <dimen name="titlebar_ic_padding">12dp</dimen>
+<!-- @Deprecated    <dimen name="titlebar_back_ic_margin_top">30dp</dimen> -->
+    
+    <!-- 会话相关 -->
+<!-- @Deprecated    <dimen name="chat_index_praise_icon_size">48dp</dimen> -->
+<!-- @Deprecated    <dimen name="chat_tool_height">44dp</dimen> -->
+    <dimen name="chat_bottle_photo_size">80dp</dimen>
+    <dimen name="chat_fail_icon_size">24dp</dimen>
+<!-- @Deprecated    <dimen name="chat_user_photo_size">40dp</dimen> -->
+<!-- @Deprecated    <dimen name="chat_pic_height">120dp</dimen> -->
+    <dimen name="chat_send_btn_height">28dp</dimen>
+    <dimen name="chat_send_btn_width">42dp</dimen>
+    <dimen name="chat_send_btn_margin_right">8dp</dimen>
+    <dimen name="chat_item_my_bottle_margin">96dp</dimen>
+    <dimen name="chat_item_other_bottle_margin">48dp</dimen>
+    <dimen name="chat_item_my_text_margin">32dp</dimen>
+    <dimen name="chat_item_other_text_margin">48dp</dimen>
+    
+    <!-- 会话索引相关 -->
+<!-- @Deprecated    <dimen name="chat_index_sex_height">12dp</dimen> -->
+    <dimen name="chat_index_name_margin">6dp</dimen>
+    <dimen name="chat_index_item_height">88dp</dimen>    
+    
+    <!-- 文章点赞界面 -->
+<!-- @Deprecated    <dimen name="topic_praise_name_margin_top">16dp</dimen> -->
+<!-- @Deprecated    <dimen name="topic_praise_location_margin_top">24dp</dimen> -->
+<!-- @Deprecated    <dimen name="topic_praise_profile_height">24dp</dimen> -->
+    
+    <!-- 设置 -->
+    <dimen name="text_album_empty">14sp</dimen>  
+    
+    <!-- 文明用语提示相关 -->
+    <dimen name="tips_height">38dp</dimen>
+    
+    <!-- 附近的人 -->
+<!-- @Deprecated    <dimen name="near_user_list_height">244dp</dimen> -->
+<!-- @Deprecated    <dimen name="near_user_list_height_1">224dp</dimen> -->
+<!-- @Deprecated    <dimen name="near_user_head_height">100dp</dimen> -->
+<!-- @Deprecated    <dimen name="near_view_pager_margin">36dp</dimen> -->
+	
+	<!--贴纸相关 -->
+<!-- @Deprecated    <dimen name="sticker_dot_height">4dp</dimen> -->
+    <dimen name="sticker_dot_margin">3dp</dimen>
+    <dimen name="sticker_category_gridview_width">95dp</dimen>
+    <dimen name="sticker_category_gridview_height">104dp</dimen>
+    <dimen name="sticker_category_gridview_horizontal_gap">10dp</dimen>
+    <dimen name="sticker_category_gridview_vertical_gap">0dp</dimen>
+    <dimen name="sticker_category_margin_top">16dp</dimen>
+    <dimen name="sticker_switch_layout_height">48dp</dimen>
+    
+<!-- @Deprecated    <dimen name="topic_edit_layout_height">150dp</dimen> -->
+    
+    <!-- 消息通知汇总页面 -->
+    <dimen name="msg_notify_item_height">56dp</dimen>
+    
+    <!--关注列表  -->
+    <dimen name="user_favo_add_btn_drawable_padding">2dp</dimen>
+    <dimen name="user_favo_ok_btn_drawable_padding">2dp</dimen>
+    <dimen name="user_favo_fans_item_height">64dp</dimen>
+    
+    <!-- 定制的通知栏 -->
+    <dimen name="custom_nofity_logo_size">16dp</dimen>
+    <dimen name="custom_nofity_left_image_size">64dp</dimen>
+    
+    <!-- 3.0新增首页相关 -->
+    <dimen name="main_tab_height">@dimen/com_space_unit6</dimen>
+    
+    <!-- 3.0新增发现页相关 -->
+    <dimen name="subject_banner_dot_margin">10dp</dimen>
+    <dimen name="subject_space">8dp</dimen>
+    <dimen name="subject_recommend_item_height">28dp</dimen>
+    <dimen name="subject_recommend_item_margin_left">4dp</dimen>
+    <dimen name="subject_recommend_item_margin_top">8dp</dimen>
+    <dimen name="subject_search_edittext_right_margin">10dp</dimen>
+    <dimen name="subject_search_edittext_left_margin">10dp</dimen>
+    <dimen name="square_topic_image_height">88dp</dimen>
+    <dimen name="square_topic_image_width">88dp</dimen>
+    <dimen name="square_topic_image_gridview_horizontal_gap">4dp</dimen>
+    <dimen name="square_topic_image_gridview_vertical_gap">0dp</dimen>
+    <dimen name="post_topic_subject_item_height">24dp</dimen>
+    
+    <dimen name="subject_select_group_padding">16dp</dimen>
+    
+    <!-- 带二维码的图片分享 -->
+<!-- @Deprecated    <dimen name="qrcode_size">72dp</dimen> -->
+<!-- @Deprecated    <dimen name="qrcode_margin_size">3dp</dimen> -->
+<!-- @Deprecated    <dimen name="qrcode_logo_size">16dp</dimen> -->
+<!-- @Deprecated    <dimen name="qrcode_logo_margin_size">1dp</dimen> -->
+<!-- @Deprecated    <dimen name="qrcode_logo_corners_size">2dp</dimen> -->
+<!-- @Deprecated    <dimen name="qrcode_image_width">360dp</dimen> -->
+<!-- @Deprecated    <dimen name="qrcode_image_height">462dp</dimen> -->
+    
+    <!-- 用户搜索 -->
+    <dimen name="search_empty_height">44dp</dimen>
+    
+    <!-- 详情页 -->
+    <dimen name="topic_detail_comment_title_height">40dp</dimen>
+    <dimen name="comment_input_min_height">40dp</dimen>
+    
+    <!-- 3.3 新增评论图片的size -->
+<!-- @Deprecated    <dimen name="face_margin">20dp</dimen>     -->
+    <dimen name="comment_image_size">60dp</dimen>    
+    <dimen name="comment_category_width">45dp</dimen>
+    <dimen name="comment_category_height">38dp</dimen>
+    
+    <!-- 3.4新增推荐达人用户给新用户 -->
+<!-- @Deprecated    <dimen name="next_recommend_list_text_height">40dp</dimen> -->
+<!-- @Deprecated    <dimen name="next_recommend_list_text_size">20sp</dimen> -->
+    <dimen name="login_bottom_height">50dp</dimen>
+    <dimen name="login_bottom_margin_bottom">10dp</dimen>
+    
+    <!-- 3.6精选页面新增今日福袋相关 -->
+    <dimen name="selection_opera_textsize">17sp</dimen>
+    <dimen name="selection_opera_btnwidth">160dp</dimen>
+    <dimen name="selection_opera_btnheight">40dp</dimen>
+    
+    <!-- 达人页面 -->
+    <dimen name="famous_image_divider">2dp</dimen>
+</resources>
