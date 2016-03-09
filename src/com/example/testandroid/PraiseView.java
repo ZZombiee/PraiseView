@@ -87,7 +87,13 @@ public class PraiseView extends SurfaceView implements SurfaceHolder.Callback {
                 } else {
                     mPaint.setAlpha(255);
                 }
-                
+                // 设置缩放
+                if (coords.y < mHeight && coords.y > mHeight*0.75) {
+                    bubble.scale = 0.5f + (mHeight - coords.y)*2f/mHeight;
+                    canvas.scale(bubble.scale, bubble.scale, mWidth/2, mHeight);
+                } else {
+                    canvas.scale(1f, 1f);
+                }
                 canvas.drawBitmap(bubble.bitmap, coords.x, coords.y, mPaint); // 绘制图像
 
                 // 设置下次绘制坐标
@@ -107,11 +113,11 @@ public class PraiseView extends SurfaceView implements SurfaceHolder.Callback {
         }
     }
 
-    private int getXbyY(Bubble bubble, int x) {
+    private int getXbyY(Bubble bubble, int y) {
 
         // float startx = delta - amplifier * (float) (Math.sin(phase * 2 *
         // (float) Math.PI / 360.0f + 2 * Math.PI * frequency / height * x));
-        float startx = bubble.delta - bubble.amplifier * (float) (Math.sin(bubble.data1 + bubble.data2 * x));
+        float startx = bubble.delta - bubble.amplifier * (float) (Math.sin(bubble.data1 + bubble.data2 * y));
         return (int) startx;
     }
 
@@ -124,6 +130,8 @@ public class PraiseView extends SurfaceView implements SurfaceHolder.Callback {
             bubble.delay = mRandom.nextInt(100 * count); // 避免同时增加很多个赞
             bubble.coordinates.x = 0;
             bubble.coordinates.y = mHeight + bubble.delay;
+            bubble.delta += bubble.delta - getXbyY(bubble, mHeight);
+            
             synchronized (mBubbles) {
                 mBubbles.add(bubble);
             }
@@ -164,8 +172,9 @@ public class PraiseView extends SurfaceView implements SurfaceHolder.Callback {
         int n = mRandom.nextInt(mDrawableResIDs.length);
         Bitmap bitmap = mDrawables[n];
         if (bitmap == null || bitmap.isRecycled()) {
-            bitmap = BitmapFactory.decodeResource(getResources(), mDrawableResIDs[n]);
-            mDrawables[n] = bitmap;
+            BitmapFactory.Options opts = new BitmapFactory.Options();
+            opts.inMutable = true;
+            bitmap = BitmapFactory.decodeResource(getResources(), mDrawableResIDs[n], opts);
         }
         return bitmap;
     }
@@ -222,6 +231,8 @@ public class PraiseView extends SurfaceView implements SurfaceHolder.Callback {
         public float phase      = 45; // 相位
         public float delta      = 500; // 偏移量
         public float amplifier  = 500; // 振幅
+        
+        public float scale  = 1.0f; // 振幅
 
         // 用于缓存计算结果，避免在onDraw中计算过量
         public double data1;
@@ -235,8 +246,9 @@ public class PraiseView extends SurfaceView implements SurfaceHolder.Callback {
             phase = rFloat * 360;
             amplifier = mWidth / 8 + rFloat * mWidth / 8;
 
-            int n = dip2px(rFloat * 20);
-            delta = mWidth / 2 + (n % 2 == 1 ? n * (-1) : n); // 偏移量
+//            int n = dip2px(rFloat * 20);
+//            delta = mWidth / 2 + (n % 2 == 1 ? n * (-1) : n); // 偏移量
+            delta = mWidth / 2; // 偏移量
 
             coordinates = new Coordinates();
             coordinates.y = mHeight;
@@ -270,9 +282,6 @@ public class PraiseView extends SurfaceView implements SurfaceHolder.Callback {
         this.mOnBubbleStateListener = bubbleStateListener;
     }
     
-    /**
-     * @author yeguangrong
-     */
     public interface OnBubbleStateListener {
         public void onStart();
         public void onEnd();
