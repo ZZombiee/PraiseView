@@ -175,6 +175,7 @@ public class PraiseView extends SurfaceView implements SurfaceHolder.Callback {
             BitmapFactory.Options opts = new BitmapFactory.Options();
             opts.inMutable = true;
             bitmap = BitmapFactory.decodeResource(getResources(), mDrawableResIDs[n], opts);
+            mDrawables[n] = bitmap;
         }
         return bitmap;
     }
@@ -232,7 +233,7 @@ public class PraiseView extends SurfaceView implements SurfaceHolder.Callback {
         public float delta      = 500; // 偏移量
         public float amplifier  = 500; // 振幅
         
-        public float scale  = 1.0f; // 振幅
+        public float scale  = 1.0f; // 缩放
 
         // 用于缓存计算结果，避免在onDraw中计算过量
         public double data1;
